@@ -38,6 +38,21 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-hero-light dark:bg-gradient-hero-dark" />
         </div>
 
+        {/* Dotted overlay pattern - top 30% of viewport with fade effect */}
+        <div className="fixed top-0 left-0 w-full h-[100vh] z-[1] pointer-events-none">
+          <div className="absolute inset-0
+                        bg-[radial-gradient(circle_at_1px_1px,#d1d5db_1px,transparent_1px)]
+                        dark:bg-[radial-gradient(circle_at_1px_1px,#4b5563_1px,transparent_1px)]
+                        [background-size:16px_16px]
+                        opacity-60 dark:opacity-40">
+          </div>
+          {/* Fade out gradient for smooth blending */}
+          <div className="absolute inset-0
+                        bg-gradient-to-b from-transparent via-transparent to-[#ffffff]
+                        dark:bg-gradient-to-b dark:from-transparent dark:via-transparent dark:to-[#000000]">
+          </div>
+        </div>
+
         <Navbar />
         <main>
           <Hero />
