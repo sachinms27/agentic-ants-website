@@ -1,6 +1,6 @@
 # Agentic Ants - AI Command Center Landing Page
 
-A modern, responsive landing page for Agentic Ants - an enterprise-grade AI operations platform that provides comprehensive observability, security, and cost management for production AI agents and GenAI applications.
+A modern, responsive landing page for Agentic Ants - an enterprise-grade AI operations platform that provides comprehensive observability, security, policy management, and cost management for production AI agents and GenAI applications.
 
 ## 🚀 Overview
 
