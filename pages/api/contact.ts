@@ -40,14 +40,6 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<ApiResponse>
 ) {
-  // Only allow POST requests
-  if (req.method !== 'POST') {
-    return res.status(405).json({
-      success: false,
-      message: 'Method not allowed',
-      error: 'Only POST requests are accepted',
-    });
-  }
 
   // Set CORS headers
   res.setHeader('Access-Control-Allow-Origin', process.env.NEXT_PUBLIC_API_URL || '*');
@@ -57,6 +49,15 @@ export default async function handler(
   // Handle OPTIONS request
   if (req.method === 'OPTIONS') {
     return res.status(200).end();
+  }
+
+  // Only allow POST requests
+  if (req.method !== 'POST') {
+    return res.status(405).json({
+      success: false,
+      message: 'Method not allowed',
+      error: 'Only POST requests are accepted',
+    });
   }
 
   try {
