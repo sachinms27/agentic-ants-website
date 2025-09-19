@@ -30,7 +30,7 @@ export default function Home() {
         <meta name="twitter:title" content="Agentic Ants - AI Command Center for AI Agents" />
         <meta name="twitter:description" content="Enterprise-grade observability, security, and cost management for production AI agents and GenAI applications." />
         <link rel="canonical" href="https://agenticants.ai" />
-        <link rel="icon" type="image/svg+xml" href="/ants.svg" />
+        <link rel="icon" type="image/svg+xml" href="/ants-cropped.svg" />
        
       </Head>
 

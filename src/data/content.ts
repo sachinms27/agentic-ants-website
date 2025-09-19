@@ -3,7 +3,7 @@ import { SIGN_IN_URL } from "../config/urls";
 export const siteContent = {
   brand: {
     name: "Agentic Ants",
-    logo: "/ants.svg",
+    logo: "/ants-cropped.svg",
   },
   navigation: {
     items: [

@@ -66,7 +66,7 @@ export function Navbar() {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.2 }}
-            className="flex items-center space-x-3 cursor-pointer"
+            className="flex items-center space-x-1 cursor-pointer"
             onClick={() => {
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
@@ -74,8 +74,8 @@ export function Navbar() {
             <Image
               src={siteContent.brand.logo}
               alt="Agentic Ants Logo"
-              width={40}
-              height={40}
+              width={48}
+              height={48}
               className="object-contain rounded-md"
             />
             <span className="font-bold text-lg text-foreground">
@@ -190,9 +190,9 @@ export function Navbar() {
             <Image
               src={siteContent.brand.logo}
               alt="Agentic Ants Logo"
-              width={32}
-              height={32}
-              className="w-7 h-7 sm:w-8 sm:h-8 object-contain"
+              width={40}
+              height={40}
+              className="w-10 h-10 sm:w-12 sm:h-12 object-contain"
             />
             <span className="font-bold text-base sm:text-lg text-foreground">
               {siteContent.brand.name}

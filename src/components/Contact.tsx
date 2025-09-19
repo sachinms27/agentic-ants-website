@@ -8,6 +8,7 @@ import {
   Shield,
   ArrowRight,
   Check,
+  AlertCircle,
 } from "lucide-react";
 import { contactContent } from "../data/contact";
 import {
@@ -29,6 +30,7 @@ export function Contact() {
 
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const iconMap = {
     "🚀": Rocket,
@@ -43,24 +45,46 @@ export function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setError(null);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-
-    setIsSubmitted(true);
-    setIsSubmitting(false);
-
-    // Reset form after success message
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({
-        name: "",
-        email: "",
-        company: "",
-        agentCount: "",
-        useCase: "",
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
       });
-    }, 3000);
+
+      const result = await response.json();
+
+      if (result.success) {
+        setIsSubmitted(true);
+
+        // Reset form after success message
+        setTimeout(() => {
+          setIsSubmitted(false);
+          setFormData({
+            name: "",
+            email: "",
+            company: "",
+            agentCount: "",
+            useCase: "",
+          });
+        }, 4000);
+      } else {
+        setError(result.message || 'Failed to submit form. Please try again.');
+        // Clear error after 5 seconds
+        setTimeout(() => setError(null), 5000);
+      }
+    } catch (error) {
+      console.error('Network error:', error);
+      setError('Network error. Please check your connection and try again.');
+      // Clear error after 5 seconds
+      setTimeout(() => setError(null), 5000);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -158,11 +182,11 @@ export function Contact() {
                       <Check className="w-8 h-8 text-primary" />
                     </div>
                     <h3 className="text-xl font-bold text-foreground mb-2">
-                      Demo Request Received!
+                      Message Sent Successfully!
                     </h3>
                     <p className="text-muted-foreground">
                       Our team will contact you within 24 hours
-                      to schedule your personalized demo.
+                      to discuss your requirements.
                     </p>
                   </div>
                 </motion.div>
@@ -177,6 +201,19 @@ export function Contact() {
                   {contactContent.form.subtitle}
                 </p>
               </div>
+
+              {/* Error Message */}
+              {error && (
+                <motion.div
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -10 }}
+                  className="mb-4 p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-xl flex items-start gap-3"
+                >
+                  <AlertCircle className="w-5 h-5 text-red-600 dark:text-red-400 mt-0.5" />
+                  <p className="text-sm text-red-700 dark:text-red-300">{error}</p>
+                </motion.div>
+              )}
 
               {/* Form */}
               <form
