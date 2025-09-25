@@ -36,7 +36,7 @@ export function Pricing() {
         </motion.div>
 
         {/* Pricing Cards */}
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {pricingContent.plans.map((plan, index) => (
             <motion.div
               key={plan.id}
@@ -50,18 +50,22 @@ export function Pricing() {
               }}
               className="relative"
             >
-              {/* Popular Badge */}
-              {plan.isPopular && (
-                <div className="absolute -top-3 right-6 z-10">
-                  <div className="bg-primary text-primary-foreground px-3 py-1 rounded-full">
-                    <span className="font-semibold text-xs">
-                      Popular
+              {/* Pro Badge */}
+              {plan.isPro && (
+                <div className="absolute -top-8 -right-2 transform -translate-x-1/2 z-10">
+                  <div className="bg-primary text-primary-foreground px-4 py-1.5 rounded-full shadow-lg dark:shadow-md">
+                    <span className="font-semibold text-xs uppercase tracking-wider">
+                      Most Popular
                     </span>
                   </div>
                 </div>
               )}
 
-              <div className="bg-card border border-border rounded-2xl p-8 h-full relative overflow-hidden">
+              <div className={`bg-card border rounded-2xl p-8 h-full relative overflow-hidden transition-all duration-300 ${
+                plan.isPro
+                  ? "border-2 border-primary shadow-2xl shadow-primary/20 dark:shadow-primary/10 bg-gradient-to-b from-primary/5 to-transparent dark:from-primary/10 dark:to-transparent scale-105"
+                  : "border border-border hover:border-muted-foreground/30 dark:border-border dark:hover:border-muted-foreground/30"
+              }`}>
                 {/* Plan Header */}
                 <div className="mb-6">
                   <h3 className="text-xl font-bold text-foreground mb-4">
@@ -103,7 +107,7 @@ export function Pricing() {
                     className={`
                       w-full py-3 px-6 rounded-lg font-medium transition-all duration-200 text-center
                       ${
-                        plan.isPopular
+                        plan.isPro
                           ? "bg-primary text-primary-foreground hover:bg-primary/90"
                           : "border border-border text-foreground hover:bg-muted/50"
                       }
@@ -111,6 +115,8 @@ export function Pricing() {
                   >
                     {plan.id === "enterprise"
                       ? "Contact Sales"
+                      : plan.id === "free"
+                      ? "Get Started Free"
                       : "Start Free Trial"}
                   </motion.button>
                 </div>
@@ -151,7 +157,7 @@ export function Pricing() {
                                   className="flex items-start gap-3"
                                 >
                                   <div className="flex-shrink-0 mt-0.5">
-                                    <Check className="w-4 h-4 text-muted-foreground" />
+                                    <Check className="w-4 h-4 text-muted-foreground dark:text-muted-foreground" />
                                   </div>
                                   <span className="text-sm text-foreground leading-relaxed">
                                     {feature}
@@ -166,9 +172,9 @@ export function Pricing() {
                   </div>
                 </div>
 
-                {/* Subtle highlight for popular plan */}
-                {plan.isPopular && (
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary/3 via-transparent to-transparent pointer-events-none rounded-2xl" />
+                {/* Subtle highlight for pro plan */}
+                {plan.isPro && (
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-transparent dark:from-primary/10 pointer-events-none rounded-2xl" />
                 )}
               </div>
             </motion.div>

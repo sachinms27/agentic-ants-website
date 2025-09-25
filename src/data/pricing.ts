@@ -4,13 +4,36 @@ export const pricingContent = {
   
   plans: [
     {
-      id: "scale",
-      name: "Scale",
+      id: "free",
+      name: "Free",
+      description: "Get started with basic features",
+      price: "$0",
+      period: "per month",
+      credits: "50,000 credits/month",
+      isPro: false,
+      features: [
+        {
+          category: "Essentials",
+          items: [
+            "Basic features",
+            "Up to 3 team members",
+          ]
+        },
+        {
+          category: "Support & Data",
+          items: [
+            "Community support",
+          ]
+        }
+      ],    },
+    {
+      id: "pro",
+      name: "Pro",
       description: "Startups, small teams, pilots",
       price: "$50",
       period: "per month",
-      credits: "10,000 credits",
-      isPopular: true,
+      credits: "100,000 credits",
+      isPro: true,
       features: [
         {
           category: "Performance",
@@ -44,7 +67,7 @@ export const pricingContent = {
       price: "Custom",
       period: "pricing",
       credits: "Custom credits",
-      isPopular: false,
+      isPro: false,
       features: [
         {
           category: "Performance",
