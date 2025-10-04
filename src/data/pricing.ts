@@ -10,7 +10,7 @@ export const pricingContent = {
       price: "$49",
       period: "per month",
       credits: "100,000 credits",
-      isPopular: true,
+      isPro: true,
       features: [
         {
           category: "Performance",
@@ -44,7 +44,7 @@ export const pricingContent = {
       price: "Custom",
       period: "pricing",
       credits: "Custom credits",
-      isPopular: false,
+      isPro: false,
       features: [
         {
           category: "Performance",
