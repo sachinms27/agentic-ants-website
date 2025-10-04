@@ -87,7 +87,7 @@ export function Pricing() {
                   </div>
 
                   {/* Description */}
-                  <p className="text-muted-foreground text-sm mb-6 leading-relaxed">
+                  <p className="text-muted-foreground text-sm mb-2 leading-relaxed">
                     {plan.description}
                   </p>
 

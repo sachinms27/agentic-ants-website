@@ -4,12 +4,12 @@ export const pricingContent = {
   
   plans: [
     {
-      id: "scale",
-      name: "Scale",
-      description: "Startups, small teams, pilots",
-      price: "$50",
+      id: "pro",
+      name: "Pro",
+      description: "1 month free trial with 50K credits",
+      price: "$49",
       period: "per month",
-      credits: "10,000 credits",
+      credits: "100,000 credits",
       isPopular: true,
       features: [
         {

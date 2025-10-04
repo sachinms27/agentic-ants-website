@@ -52,12 +52,15 @@ export function IncludedFeatures() {
         </motion.div>
 
         {/* Features Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-px md:bg-border md:border-l md:border-r md:border-border">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {includedFeaturesContent.features.map((feature, index) => (
             <div
               key={index}
-              className="group/feature relative p-4 sm:p-5 md:p-6 bg-card rounded-xl md:rounded-none border border-border md:border-0 overflow-hidden transition-all duration-300 before:absolute before:inset-x-0 before:bottom-0 before:h-0 before:bg-gradient-to-t before:from-primary/3 before:to-transparent before:transition-all before:duration-300 hover:before:h-full hover:shadow-md md:hover:shadow-none"
+              className="group/feature relative p-4 sm:p-5 md:p-6 bg-card rounded-xl border border-border overflow-hidden transition-all duration-300 hover:shadow-lg hover:border-primary/30"
             >
+              {/* Hover gradient effect */}
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-transparent opacity-0 group-hover/feature:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+
               {/* Left Tab/Block - Hidden on mobile */}
               <div className="absolute left-0 top-1/2 -translate-y-1/2 h-6 w-1 rounded-tr-full rounded-br-full bg-border group-hover/feature:bg-primary group-hover/feature:h-8 transition-all duration-300 origin-center hidden md:block"></div>
 

@@ -8,8 +8,10 @@ import {
   Download,
   HeadphonesIcon,
   Lock,
-  AlertTriangle,
   Network,
+  Database,
+  Gauge,
+  FileText,
 } from "lucide-react";
 
 export const includedFeaturesContent = {
@@ -33,10 +35,24 @@ export const includedFeaturesContent = {
       status: "coming-soon",
     },
     {
-      icon: AlertTriangle,
-      title: "Anomaly Detection and Incident Response",
+      icon: Database,
+      title: "LLM Cache Recommendation",
       description:
-        "from traces generate events and complete incident response with integration to Jira.",
+        "Suggests optimal caching strategies to reduce repetitive calls and lower LLM costs.",
+        status: "coming-soon",
+      },
+    {
+      icon: Gauge,
+      title: "LLM Latency Optimizer",
+      description:
+        "Monitors and fine-tunes model routing to minimize response times across workloads.",
+        status: "coming-soon",
+      },
+    {
+      icon: FileText,
+      title: "LLM Inventory Governance",
+      description:
+        "Provides visibility and controls over deployed models - approved/non-approved, usage policies, and compliance.",
       status: "coming-soon",
     },
     {
@@ -50,7 +66,7 @@ export const includedFeaturesContent = {
       icon: Network,
       title: "Agent Graph",
       description:
-        "Knowing all the dependent components of the AI Agent: resources, network, gateways and ports, databases, models.",
+        "Maps relationships between AI agents, data sources, and workflows to enhance observability and orchestration.",
       status: "coming-soon",
     },
     {

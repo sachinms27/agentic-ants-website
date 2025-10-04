@@ -13,139 +13,128 @@ import {
 } from "lucide-react";
 
 const integrations = [
-  // Developer SDKs
-  {
-    name: "JavaScript / TypeScript",
-    category: "Developer SDKs",
-    image: "/ts.svg",
-    isPopular: true,
-    url: "https://github.com/ ",
-  },
-  {
-    name: "Python SDK",
-    category: "Developer SDKs",
-    image: "/python.svg",
-    url: "https://github.com/ ",
-  },
-  {
-    name: "OpenTelemetry",
-    category: "Developer SDKs",
-    image: "/opentelemetry_icon.svg",
-    url: "https://github.com/ ",
-  },
-
-  // AI Frameworks
-  {
-    name: "LangChain & LangGraph",
-    category: "AI Frameworks",
-    image: "/langchain_icon.webp",
-    isPopular: true,
-    url: "https://github.com/ ",
-  },
-  {
-    name: "LlamaIndex",
-    category: "AI Frameworks",
-    image: "/llamaindex_icon.webp",
-    isPopular: true,
-    url: "https://github.com/ ",
-  },
-  {
-    name: "Semantic Kernel",
-    category: "AI Frameworks",
-    image: "/microsoft_icon.svg",
-    url: "https://github.com/ ",
-  },
-  {
-    name: "AutoGen",
-    category: "AI Frameworks",
-    image: "/autogen_icon.svg",
-    url: "https://github.com/ ",
-  },
-  {
-    name: "Haystack",
-    category: "AI Frameworks",
-    image: "/haystack_icon.webp",
-    url: "https://github.com/ ",
-  },
-
-  // No-Code Builders
-  {
-    name: "Flowise",
-    category: "No-Code Builders",
-    image: "/flowise_logo.webp",
-    isPopular: true,
-    url: "https://github.com/ ",
-  },
-  {
-    name: "Langflow",
-    category: "No-Code Builders",
-    image: "/langflow_icon.svg",
-    isPopular: true,
-    url: "https://github.com/ ",
-  },
-  {
-    name: "Dify.AI",
-    category: "No-Code Builders",
-    image: "/dify_icon.webp",
-    url: "https://github.com/ ",
-  },
-  {
-    name: "n8n",
-    category: "No-Code Builders",
-    image: "/n8n_icon.svg",
-    url: "https://github.com/ ",
-  },
-  {
-    name: "LobeChat",
-    category: "No-Code Builders",
-    image: "/lobechat_icon.webp",
-    url: "https://github.com/ ",
-  },
-
-  // AI Gateways
-  {
-    name: "OpenRouter",
-    category: "AI Gateways",
-    image: "/openrouter_icon.svg",
-    url: "https://github.com/ ",
-  },
-  {
-    name: "LiteLLM Proxy",
-    category: "AI Gateways",
-    image: "/litellm_icon.webp",
-    url: "https://github.com/ ",
-  },
-
-  // Productivity Tools
+  // Available Now
   {
     name: "JIRA",
-    category: "Productivity Tools",
+    category: "Available Now",
     image: "/Jira.webp",
     url: "https://github.com/ ",
+    status: "available",
   },
   {
     name: "Slack",
-    category: "Productivity Tools",
+    category: "Available Now",
     image: "/slack.webp",
     url: "https://github.com/ ",
+    status: "available",
+  },
+  {
+    name: "JavaScript/TypeScript SDK",
+    category: "Available Now",
+    image: "/ts.svg",
+    url: "https://github.com/ ",
+    status: "available",
+  },
+  {
+    name: "Python SDK",
+    category: "Available Now",
+    image: "/python.svg",
+    url: "https://github.com/ ",
+    status: "available",
+  },
+  {
+    name: "OpenTelemetry SDK",
+    category: "Available Now",
+    image: "/opentelemetry_icon.svg",
+    url: "https://github.com/ ",
+    status: "available",
+  },
+
+  // Coming Soon
+  {
+    name: "ServiceNow",
+    category: "Coming Soon",
+    image: "/microsoft_icon.svg",
+    status: "coming-soon",
+  },
+  {
+    name: "LangChain & LangGraph",
+    category: "Coming Soon",
+    image: "/langchain_icon.webp",
+    status: "coming-soon",
+  },
+  {
+    name: "LlamaIndex",
+    category: "Coming Soon",
+    image: "/llamaindex_icon.webp",
+    status: "coming-soon",
+  },
+  {
+    name: "Semantic Kernel",
+    category: "Coming Soon",
+    image: "/microsoft_icon.svg",
+    status: "coming-soon",
+  },
+  {
+    name: "AutoGen",
+    category: "Coming Soon",
+    image: "/autogen_icon.svg",
+    status: "coming-soon",
+  },
+  {
+    name: "Haystack",
+    category: "Coming Soon",
+    image: "/haystack_icon.webp",
+    status: "coming-soon",
+  },
+  {
+    name: "Flowise",
+    category: "Coming Soon",
+    image: "/flowise_logo.webp",
+    status: "coming-soon",
+  },
+  {
+    name: "Langflow",
+    category: "Coming Soon",
+    image: "/langflow_icon.svg",
+    status: "coming-soon",
+  },
+  {
+    name: "Dify.AI",
+    category: "Coming Soon",
+    image: "/dify_icon.webp",
+    status: "coming-soon",
+  },
+  {
+    name: "n8n",
+    category: "Coming Soon",
+    image: "/n8n_icon.svg",
+    status: "coming-soon",
+  },
+  {
+    name: "LobeChat",
+    category: "Coming Soon",
+    image: "/lobechat_icon.webp",
+    status: "coming-soon",
+  },
+  {
+    name: "OpenRouter",
+    category: "Coming Soon",
+    image: "/openrouter_icon.svg",
+    status: "coming-soon",
+  },
+  {
+    name: "LiteLLM Proxy",
+    category: "Coming Soon",
+    image: "/litellm_icon.webp",
+    status: "coming-soon",
   },
 ];
 
 const categories = [
   { id: "all", name: "All", icon: Blocks },
-  { id: "Developer SDKs", name: "Developer SDKs", icon: Code2 },
-  { id: "AI Frameworks", name: "AI Frameworks", icon: Blocks },
-  {
-    id: "No-Code Builders",
-    name: "No-Code Builders",
-    icon: Zap,
-  },
-  { id: "AI Gateways", name: "AI Gateways", icon: Globe },
-  {
-    id: "Productivity Tools",
-    name: "Productivity Tools",
-    icon: Calendar,
-  },
+  { id: "Available Now", name: "Available Now", icon: Zap },
+  { id: "Coming Soon", name: "Coming Soon", icon: Calendar },
 ];
 
 export function Integrations() {
@@ -243,16 +232,21 @@ export function Integrations() {
                 transition: { duration: 0.2 },
               }}
               onClick={() =>
-                handleIntegrationClick(integration.url)
+                integration.status !== "coming-soon" && integration.url
+                  ? handleIntegrationClick(integration.url)
+                  : null
               }
-              className="relative group cursor-pointer"
+              className={`relative group ${
+                integration.status === "coming-soon"
+                  ? "cursor-default opacity-60"
+                  : "cursor-pointer"
+              }`}
             >
               <div className="bg-card border border-border rounded-2xl p-4 md:p-6 hover:border-primary/30 hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 h-full">
-                {/* Popular Badge */}
-                {integration.isPopular && (
-                  <div className="absolute -top-2 -right-2 bg-gradient-to-r from-orange-500 to-red-500 text-white text-xs font-bold px-2 py-1 rounded-full flex items-center gap-1 shadow-lg">
-                    <Flame className="w-3 h-3" />
-                    <span className="hidden sm:inline">Popular</span>
+                {/* Status Badge - Only show when not in Coming Soon filter */}
+                {integration.status === "coming-soon" && activeFilter !== "Coming Soon" && (
+                  <div className="absolute -top-2 -right-2 bg-muted border border-border text-muted-foreground text-xs font-bold px-2 py-0.5 rounded-full shadow-sm">
+                    <span className="text-[10px] sm:text-xs">Soon</span>
                   </div>
                 )}
 
@@ -269,7 +263,7 @@ export function Integrations() {
 
                 {/* Integration Info */}
                 <div className="text-center">
-                  <h4 className="text-xs md:text-sm font-semibold text-foreground group-hover:text-primary transition-colors duration-200 leading-tight mb-1">
+                  <h4 className="text-xs md:text-sm font-semibold text-foreground group-hover:text-primary transition-colors duration-200 leading-tight mb-1 break-words line-clamp-2">
                     {integration.name}
                   </h4>
                   <p className="text-xs text-muted-foreground">
