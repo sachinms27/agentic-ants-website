@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://agenticants.ai
+
+# Sitemaps
+Sitemap: https://agenticants.ai/sitemap.xml

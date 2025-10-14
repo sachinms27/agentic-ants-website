@@ -4,12 +4,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
 import {
-  Code2,
   Zap,
   Blocks,
-  Globe,
   Calendar,
-  Flame,
 } from "lucide-react";
 
 const integrations = [
@@ -182,7 +179,7 @@ export function Integrations() {
           className="mb-8 md:mb-12"
         >
           <div className="flex flex-wrap items-center justify-center gap-2 p-2 max-w-5xl mx-auto">
-            {categories.map((category, index) => {
+            {categories.map((category) => {
               const Icon = category.icon;
               const isActive = activeFilter === category.id;
 
@@ -256,12 +253,9 @@ export function Integrations() {
 
                 {/* Integration Info */}
                 <div className="text-center">
-                  <h4 className="text-xs md:text-sm font-semibold text-foreground group-hover:text-primary transition-colors duration-200 leading-tight mb-1 break-words line-clamp-2">
+                  <h4 className="text-xs md:text-sm font-semibold text-foreground group-hover:text-primary transition-colors duration-200 leading-tight break-words line-clamp-2">
                     {integration.name}
                   </h4>
-                  <p className="text-xs text-muted-foreground">
-                    {integration.category}
-                  </p>
                 </div>
 
                 {/* Hover Effect Overlay */}

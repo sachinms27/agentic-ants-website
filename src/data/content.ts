@@ -19,8 +19,8 @@ export const siteContent = {
     description:
       "Transform your AI operations with enterprise-grade observability, security, and cost management for AI agents and GenAI applications.",
     cta: {
-      primary: { label: "Get Started", href: "/" },
-      secondary: { label: "Learn More", href: "/" },
+      primary: { label: "Get Started", href: "#contact" },
+      secondary: { label: "Learn More", href: "#features" },
     },
     announcement: {
       text: "Introducing Ants Platform",
