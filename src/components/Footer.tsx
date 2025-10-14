@@ -197,7 +197,7 @@ export function Footer() {
             </motion.p>
 
             {/* Legal Links */}
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
@@ -213,7 +213,7 @@ export function Footer() {
                   {link.name}
                 </a>
               ))}
-            </motion.div>
+            </motion.div> */}
           </div>
         </div>
       </div>
