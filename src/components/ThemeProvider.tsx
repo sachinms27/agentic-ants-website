@@ -6,9 +6,8 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     // Apply theme before React renders to prevent flash
     const savedTheme = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const initialTheme = savedTheme || (prefersDark ? 'dark' : 'light');
-    
+    const initialTheme = savedTheme || 'dark';
+
     document.documentElement.classList.remove('light', 'dark');
     document.documentElement.classList.add(initialTheme);
   }, []);
