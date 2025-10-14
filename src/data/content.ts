@@ -1,5 +1,3 @@
-import { SIGN_IN_URL } from "../config/urls";
-
 export const siteContent = {
   brand: {
     name: "Agentic Ants",
@@ -12,7 +10,7 @@ export const siteContent = {
       { label: "Pricing", href: "#pricing" },
     ],
     auth: {
-      signIn: { label: "Sign In", href: SIGN_IN_URL },
+      signIn: { label: "Sign In", href: "#contact" },
       demo: { label: "Request Demo", href: "#contact" },
     },
   },
