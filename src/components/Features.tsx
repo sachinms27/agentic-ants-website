@@ -7,7 +7,7 @@ import { ArrowRight } from "lucide-react";
 
 export function Features() {
   return (
-    <section className="py-12 bg-background">
+    <section className="py-12">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-6">
           {/* Title */}

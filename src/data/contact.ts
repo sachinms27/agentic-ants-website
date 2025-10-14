@@ -13,11 +13,11 @@ export const contactContent = {
       title: "Expert Guidance",
       description: "Dedicated success manager for Enterprise plans"
     },
-    {
-      icon: "🔒",
-      title: "Enterprise Security", 
-      description: "SOC2, GDPR, HIPAA compliant from day one"
-    }
+    // {
+    //   icon: "🔒",
+    //   title: "Enterprise Security", 
+    //   description: "SOC2, GDPR, HIPAA compliant from day one"
+    // }
   ],
   
   form: {

@@ -15,7 +15,7 @@ export function VideoSection() {
   };
 
   return (
-    <section className="py-16 bg-background -mt-2">
+    <section className="py-16 -mt-2">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Outer container with theme-consistent styling */}
         <motion.div

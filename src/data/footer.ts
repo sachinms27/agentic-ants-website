@@ -7,44 +7,44 @@ export const footerContent = {
     {
       name: "X (Twitter)",
       icon: "Twitter",
-      url: "/"
+      url: "https://x.com/agenticantsai?s=11"
     },
-    {
-      name: "GitHub",
-      icon: "Github",
-      url: "/"
-    },
+    // {
+    //   name: "GitHub",
+    //   icon: "Github",
+    //   url: "/"
+    // },
     {
       name: "Discord",
       icon: "MessageCircle",
-      url: "/"
+      url: "https://discord.gg/HnC7ZZNu"
     },
     {
       name: "LinkedIn",
       icon: "Linkedin", 
-      url: "/"
+      url: " https://www.linkedin.com/company/agentic-ants/about/"
     },
     {
       name: "YouTube",
       icon: "Youtube",
-      url: "/"
+      url: "https://www.youtube.com/@AgenticAnts"
     }
   ],
   sections: [
     {
       title: "Solutions",
       links: [
-        { name: "AI Agent FinOps", url: "/" },
-        { name: "AI Agent SRE", url: "/" },
-        { name: "AI Agent SecOps", url: "/" },
-        { name: "Platform Features", url: "/" }
+        { name: "AI Agent FinOps", url: "#pillars" },
+        { name: "AI Agent SRE", url: "#pillars" },
+        { name: "AI Agent SecOps", url: "#pillars" },
+        { name: "Platform Features", url: "#features" }
       ]
     },
     {
       title: "Company", 
       links: [
-        { name: "Careers", url: "/" },
-        { name: "Press", url: "/" },
+        // { name: "Careers", url: "/" },
+        // { name: "Press", url: "/" },
         { name: "Contact", url: "#contact" }
       ]
     }
@@ -52,12 +52,12 @@ export const footerContent = {
   legal: {
     copyright: "© 2025 Agentic Ants. All rights reserved.",
     links: [
-      { name: "Privacy Policy", url: "/" },
-      { name: "Terms of Service", url: "/" },
-      { name: "SOC2", url: "/" },
-      { name: "GDPR", url: "/" },
-      { name: "HIPAA", url: "/" },
-      { name: "ISO 27001", url: "/" }
+      // { name: "Privacy Policy", url: "/" },
+      // { name: "Terms of Service", url: "/" },
+      // { name: "SOC2", url: "/" },
+      // { name: "GDPR", url: "/" },
+      // { name: "HIPAA", url: "/" },
+      // { name: "ISO 27001", url: "/" }
     ]
   }
 };

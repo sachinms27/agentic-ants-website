@@ -305,13 +305,13 @@ export function Contact() {
                         }
                       />
                     </SelectTrigger>
-                    <SelectContent className="bg-card border border-border rounded-xl shadow-lg overflow-hidden">
+                    <SelectContent className="!bg-input-background border border-border rounded-xl shadow-lg overflow-hidden">
                       {contactContent.form.fields.agentCount.options?.map(
                         (option) => (
                           <SelectItem
                             key={option}
                             value={option}
-                            className="text-foreground hover:bg-accent focus:bg-accent cursor-pointer text-sm md:text-base"
+                            className="cursor-pointer text-sm md:text-base"
                           >
                             {option}
                           </SelectItem>

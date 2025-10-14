@@ -19,7 +19,7 @@ export const siteContent = {
   hero: {
     title: "Your AI Command Center for AI Agents",
     description:
-      "Transform your AI operations with enterprise-grade observability, security, and cost management for production AI agents and GenAI applications.",
+      "Transform your AI operations with enterprise-grade observability, security, and cost management for AI agents and GenAI applications.",
     cta: {
       primary: { label: "Get Started", href: "/" },
       secondary: { label: "Learn More", href: "/" },
@@ -68,9 +68,9 @@ export const siteContent = {
     },
   },
   features: {
-    title: "Achieve ROI with Your GenAI Investments",
+    title: "Visualize ROI for Your AI Investments",
     description:
-      "Align GenAI investments to real customer metrics and KPIs. Take control of your GenAI costs with real-time FinOps for complete visibility, unit economics, and razor-sharp spend forecasting.",
+      "Align AI investments to real customer metrics and KPIs. Take control of your AI costs with real-time FinOps, SRE and SecOps for complete visibility of all your AI inventory and systems.",
     cta: {
       primary: { label: "Request a Demo", href: "#contact" },
       secondary: { label: "See Pricing", href: "#pricing" },

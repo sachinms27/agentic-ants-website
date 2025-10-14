@@ -13,6 +13,7 @@ import { Pricing } from "@/components/Pricing"
 import { CreditsExplained } from "@/components/CreditsExplained"
 import { Contact } from "@/components/Contact"
 import { Footer } from "@/components/Footer"
+import { ScrollSpyManager } from "@/components/ScrollSpyManager"
 
 export default function Home() {
   return (
@@ -55,6 +56,7 @@ export default function Home() {
           </div>
         </div>
 
+        <ScrollSpyManager />
         <Navbar />
         <main>
           <Hero />
@@ -64,7 +66,7 @@ export default function Home() {
           <IncludedFeatures />
           <Integrations />
           {/* <ScrollingIntegrations /> */}
-          <KeyCapabilities />
+          {/* <KeyCapabilities /> */}
           <Pricing />
           <CreditsExplained />
           <Contact />

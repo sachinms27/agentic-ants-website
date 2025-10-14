@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
 import {
@@ -54,7 +54,7 @@ const integrations = [
   {
     name: "ServiceNow",
     category: "Coming Soon",
-    image: "/microsoft_icon.svg",
+    image: "/servicenow_logo.webp",
     status: "coming-soon",
   },
   {
@@ -209,47 +209,40 @@ export function Integrations() {
         </motion.div>
 
         {/* Integration Grid */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3 md:gap-4"
-        >
-          {filteredIntegrations.map((integration, index) => (
-            <motion.div
-              key={`${integration.name}-${activeFilter}`}
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.8 }}
-              transition={{
-                duration: 0.3,
-                delay: index * 0.03,
-                ease: "easeOut",
-              }}
-              whileHover={{
-                y: -8,
-                transition: { duration: 0.2 },
-              }}
-              onClick={() =>
-                integration.status !== "coming-soon" && integration.url
-                  ? handleIntegrationClick(integration.url)
-                  : null
-              }
-              className={`relative group ${
-                integration.status === "coming-soon"
-                  ? "cursor-default opacity-60"
-                  : "cursor-pointer"
-              }`}
-            >
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={activeFilter}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.25 }}
+            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3 md:gap-4"
+          >
+            {filteredIntegrations.map((integration, index) => (
+              <motion.div
+                key={integration.name}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{
+                  duration: 0.25,
+                  delay: index * 0.03,
+                }}
+                whileHover={{
+                  y: -8,
+                  transition: { duration: 0.2 },
+                }}
+                onClick={() =>
+                  integration.status !== "coming-soon" && integration.url
+                    ? handleIntegrationClick(integration.url)
+                    : null
+                }
+                className={`relative group ${
+                  integration.status === "coming-soon"
+                    ? "cursor-default opacity-60"
+                    : "cursor-pointer"
+                }`}
+              >
               <div className="bg-card border border-border rounded-2xl p-4 md:p-6 hover:border-primary/30 hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 h-full">
-                {/* Status Badge - Only show when not in Coming Soon filter */}
-                {integration.status === "coming-soon" && activeFilter !== "Coming Soon" && (
-                  <div className="absolute -top-2 -right-2 bg-muted border border-border text-muted-foreground text-xs font-bold px-2 py-0.5 rounded-full shadow-sm">
-                    <span className="text-[10px] sm:text-xs">Soon</span>
-                  </div>
-                )}
-
                 {/* Brand Image */}
                 <div className="mb-3 md:mb-4">
                     <Image
@@ -276,7 +269,8 @@ export function Integrations() {
               </div>
             </motion.div>
           ))}
-        </motion.div>
+          </motion.div>
+        </AnimatePresence>
 
         {/* Empty State */}
         {filteredIntegrations.length === 0 && (

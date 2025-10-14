@@ -12,6 +12,8 @@ import {
   Database,
   Gauge,
   FileText,
+  AlertTriangle,
+  FileCheck,
 } from "lucide-react";
 
 export const includedFeaturesContent = {
@@ -25,7 +27,7 @@ export const includedFeaturesContent = {
       title: "LLM Cost Optimizer",
       description:
         "Optimize LLM costs, recommend best models for AI Agents, ensure reliability, and integrate with Slack/Jira for developer notifications.",
-      status: "premium",
+      status: "available",
     },
     {
       icon: Shield,
@@ -39,15 +41,15 @@ export const includedFeaturesContent = {
       title: "LLM Cache Recommendation",
       description:
         "Suggests optimal caching strategies to reduce repetitive calls and lower LLM costs.",
-        status: "coming-soon",
-      },
+      status: "coming-soon",
+    },
     {
       icon: Gauge,
       title: "LLM Latency Optimizer",
       description:
         "Monitors and fine-tunes model routing to minimize response times across workloads.",
-        status: "coming-soon",
-      },
+      status: "coming-soon",
+    },
     {
       icon: FileText,
       title: "LLM Inventory Governance",
@@ -67,6 +69,20 @@ export const includedFeaturesContent = {
       title: "Agent Graph",
       description:
         "Maps relationships between AI agents, data sources, and workflows to enhance observability and orchestration.",
+      status: "coming-soon",
+    },
+    {
+      icon: AlertTriangle,
+      title: "AI Agent / LLM Risk Detector",
+      description:
+        "Continuously scans LLM inputs and outputs using an integrated evaluator to identify potential PII, PCI, HIPAA, and other sensitive data exposures. Provides proactive risk scoring and alerting based on real-time I/O traces.",
+      status: "coming-soon",
+    },
+    {
+      icon: FileCheck,
+      title: "AI / Agent and LLM Regulatory & Compliance Audit Report (SOX)",
+      description:
+        "Generates comprehensive compliance reports detailing every agent's lifecycle — including creation date, ownership, data access scope, transaction volumes, activity status, and open CVEs. Leverages the AI Agent Graph to visualize upstream/downstream dependencies across business units, usage patterns, and top users for audit readiness.",
       status: "coming-soon",
     },
     {
@@ -116,7 +132,7 @@ export const includedFeaturesContent = {
       title: "Security & Compliance",
       description:
         "Data Region (US/EU), Data Masking, SSO, Enterprise SSO, SOC2, ISO27001, GDPR DPA, HIPAA (Enterprise)",
-      status: "available",
+      status: "coming-soon",
     },
   ],
 };
