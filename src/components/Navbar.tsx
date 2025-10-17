@@ -73,7 +73,7 @@ export function Navbar() {
           >
             <Image
               src={siteContent.brand.logo}
-              alt="Agentic Ants Logo"
+              alt="AgenticAnts Logo"
               width={48}
               height={48}
               className="object-contain rounded-md"
@@ -189,7 +189,7 @@ export function Navbar() {
           >
             <Image
               src={siteContent.brand.logo}
-              alt="Agentic Ants Logo"
+              alt="AgenticAnts Logo"
               width={40}
               height={40}
               className="w-10 h-10 sm:w-12 sm:h-12 object-contain"

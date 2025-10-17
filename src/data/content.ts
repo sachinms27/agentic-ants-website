@@ -1,6 +1,6 @@
 export const siteContent = {
   brand: {
-    name: "Agentic Ants",
+    name: "AgenticAnts",
     logo: "/ants-cropped.svg",
   },
   navigation: {

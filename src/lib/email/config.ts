@@ -26,10 +26,10 @@ const transporterConfig: SMTPTransport.Options = {
 export const transporter = nodemailer.createTransport(transporterConfig);
 
 export const emailConfig = {
-  from: process.env.EMAIL_FROM || '"Agentic Ants" <noreply@agenticants.com>',
+  from: process.env.EMAIL_FROM || '"AgenticAnts" <noreply@agenticants.com>',
   replyTo: process.env.EMAIL_REPLY_TO || 'contact@agenticants.com',
   salesTeamEmail: process.env.SALES_TEAM_EMAIL || 'sales@agenticants.com',
-  companyName: process.env.COMPANY_NAME || 'Agentic Ants',
+  companyName: process.env.COMPANY_NAME || 'AgenticAnts',
 };
 
 export async function verifyEmailConfiguration(): Promise<boolean> {

@@ -24,7 +24,7 @@ export const customerEmailTemplate = (data: ContactFormData): string => `
     <div class="content">
       <p>Dear ${data.name},</p>
 
-      <p>Thank you for contacting Agentic Ants. We have received your inquiry and appreciate your interest in our Agentic Ants platform.</p>
+      <p>Thank you for contacting AgenticAnts. We have received your inquiry and appreciate your interest in our AgenticAnts platform.</p>
 
       <p>Our team will review your requirements and get back to you within 24 business hours to discuss how we can help transform your business with our AI solutions.</p>
 
@@ -33,10 +33,10 @@ export const customerEmailTemplate = (data: ContactFormData): string => `
       <p>We look forward to speaking with you soon.</p>
 
       <p>Best regards,</p>
-      <p>The Agentic Ants Team</p>
+      <p>The AgenticAnts Team</p>
     </div>
     <div class="footer">
-      <p>Agentic Ants | AI Agent Platform</p>
+      <p>AgenticAnts | AI Agent Platform</p>
       <p>This is an automated confirmation email sent to ${data.email}</p>
     </div>
   </div>
@@ -93,7 +93,7 @@ export const salesTeamEmailTemplate = (data: ContactFormData): string => `
       <p>Please follow up with this lead within 24 business hours.</p>
 
       <p>Best regards,<br>
-      Agentic Ants System</p>
+      AgenticAnts System</p>
     </div>
   </div>
 </body>

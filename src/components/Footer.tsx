@@ -101,7 +101,7 @@ export function Footer() {
               >
                 <Image
                   src={siteContent.brand.logo}
-                  alt="Agentic Ants Logo"
+                  alt="AgenticAnts Logo"
                   width={48}
                   height={48}
                   className="object-contain rounded-md"

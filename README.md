@@ -1,10 +1,10 @@
-# Agentic Ants - AI Command Center Landing Page
+# AgenticAnts - AI Command Center Landing Page
 
-A modern, responsive landing page for Agentic Ants - an enterprise-grade AI operations platform that provides comprehensive observability, security, policy management, and cost management for production AI agents and GenAI applications.
+A modern, responsive landing page for AgenticAnts - an enterprise-grade AI operations platform that provides comprehensive observability, security, policy management, and cost management for production AI agents and GenAI applications.
 
 ## 🚀 Overview
 
-This landing page showcases Agentic Ants' AI Command Center, featuring:
+This landing page showcases AgenticAnts' AI Command Center, featuring:
 - **FinOps**: AI cost optimization and budget management with token usage tracking and ROI analysis
 - **SRE**: Real-time monitoring and reliability engineering for AI systems with automated incident response
 - **SecOps**: Enterprise security and compliance for AI operations with SOC2, GDPR, and HIPAA support
@@ -191,7 +191,7 @@ npm run dev
 
 ## 💰 Pricing Model
 
-Agentic Ants uses a credit-based pricing system with two main plans:
+AgenticAnts uses a credit-based pricing system with two main plans:
 
 ### Scale Plan - $50/month
 - **Target**: Startups, small teams, pilots
@@ -236,7 +236,7 @@ SMTP_PASS=your-smtp-password
 EMAIL_FROM=noreply@agenticants.ai
 EMAIL_REPLY_TO=sales@agenticants.ai
 SALES_TEAM_EMAIL=sales@agenticants.ai
-COMPANY_NAME=Agentic Ants
+COMPANY_NAME=AgenticAnts
 
 # API Configuration
 NEXT_PUBLIC_API_URL=https://agenticants.ai
@@ -338,7 +338,7 @@ SMTP_PASS=your-production-smtp-password
 EMAIL_FROM=noreply@agenticants.ai
 EMAIL_REPLY_TO=sales@agenticants.ai
 SALES_TEAM_EMAIL=sales@agenticants.ai
-COMPANY_NAME=Agentic Ants
+COMPANY_NAME=AgenticAnts
 
 # Production API Configuration
 NEXT_PUBLIC_API_URL=https://agenticants.ai
@@ -410,4 +410,4 @@ For support, visit our [website](https://agenticants.ai) or contact us through t
 
 ---
 
-Built with ❤️ by the Agentic Ants team
+Built with ❤️ by the AgenticAnts team

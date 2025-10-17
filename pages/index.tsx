@@ -20,12 +20,12 @@ export default function Home() {
     <>
       <Head>
         {/* Primary Meta Tags */}
-        <title>Agentic Ants - AI Command Center for AI Agents | Enterprise LLMOps Platform</title>
-        <meta name="title" content="Agentic Ants - AI Command Center for AI Agents | Enterprise LLMOps Platform" />
+        <title>AgenticAnts - AI Command Center for AI Agents | Enterprise LLMOps Platform</title>
+        <meta name="title" content="AgenticAnts - AI Command Center for AI Agents | Enterprise LLMOps Platform" />
         <meta name="description" content="Transform your AI operations with enterprise-grade observability, security, and cost management for production AI agents and GenAI applications. Comprehensive FinOps, SRE, and SecOps platform." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="keywords" content="AI agents, LLMOps, AI agent management, FinOps, SRE, SecOps, AI observability, AI cost management, enterprise AI, AI compliance, AI agent monitoring, LLM optimization, AI security, agent orchestration, GenAI platform, AI operations, MLOps, AI governance" />
-        <meta name="author" content="Agentic Ants" />
+        <meta name="author" content="AgenticAnts" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="language" content="English" />
         <meta name="revisit-after" content="7 days" />
@@ -33,19 +33,19 @@ export default function Home() {
         {/* LinkedIn */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://agenticants.ai/" />
-        <meta property="og:title" content="Agentic Ants - AI Command Center for AI Agents | Enterprise LLMOps" />
+        <meta property="og:title" content="AgenticAnts - AI Command Center for AI Agents | Enterprise LLMOps" />
         <meta property="og:description" content="Enterprise-grade observability, security, and cost management for production AI agents and GenAI applications. Monitor, optimize, and secure your agentic workforce." />
         <meta property="og:image" content="https://agenticants.ai/og-image.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="627" />
-        <meta property="og:image:alt" content="Agentic Ants - AI Command Center for AI Agents" />
-        <meta property="og:site_name" content="Agentic Ants" />
+        <meta property="og:image:alt" content="AgenticAnts - AI Command Center for AI Agents" />
+        <meta property="og:site_name" content="AgenticAnts" />
         <meta property="og:locale" content="en_US" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content="https://agenticants.ai/" />
-        <meta name="twitter:title" content="Agentic Ants - AI Command Center for AI Agents" />
+        <meta name="twitter:title" content="AgenticAnts - AI Command Center for AI Agents" />
         <meta name="twitter:description" content="Enterprise-grade observability, security, and cost management for production AI agents and GenAI applications." />
         <meta name="twitter:image" content="https://x.com/AgenticAntsAi/photo" />
         <meta name="twitter:site" content="@AgenticAntsAi" />
@@ -65,7 +65,7 @@ export default function Home() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              "name": "Agentic Ants",
+              "name": "AgenticAnts",
               "url": "https://agenticants.ai",
               "logo": "https://agenticants.ai/ants-cropped.svg",
               "description": "Enterprise AI Command Center for AI Agents - LLMOps, FinOps, SRE, and SecOps platform",
@@ -91,7 +91,7 @@ export default function Home() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
-              "name": "Agentic Ants",
+              "name": "AgenticAnts",
               "url": "https://agenticants.ai",
               "description": "AI Command Center for AI Agents - Enterprise LLMOps Platform",
               "potentialAction": {
@@ -110,7 +110,7 @@ export default function Home() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "SoftwareApplication",
-              "name": "Agentic Ants Platform",
+              "name": "AgenticAnts Platform",
               "applicationCategory": "BusinessApplication",
               "operatingSystem": "Web",
               "offers": {

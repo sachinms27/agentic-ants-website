@@ -1,6 +1,6 @@
 export const footerContent = {
   brand: {
-    name: "Agentic Ants",
+    name: "AgenticAnts",
     description: "The HR Department for AI Agents. Providing comprehensive LLMOps, FinOps, SRE, and SecOps for your agentic workforce with enterprise-grade security and compliance."
   },
   social: [
@@ -50,7 +50,7 @@ export const footerContent = {
     }
   ],
   legal: {
-    copyright: "© 2025 Agentic Ants. All rights reserved.",
+    copyright: "© 2025 AgenticAnts. All rights reserved.",
     links: [
       // { name: "Privacy Policy", url: "/" },
       // { name: "Terms of Service", url: "/" },
